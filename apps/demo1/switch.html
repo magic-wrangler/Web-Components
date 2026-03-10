@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch Demo</title>
+    <link rel="stylesheet" href="./switch.css" />
+    <script src="./switch-demo.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <h1>Switch（HTML + CSS）</h1>
+      <p class="hint">
+        这是一个纯 HTML/CSS 的开关样式示例：支持 checked / disabled / hover / focus-visible，并保持 input 可键盘操作。
+      </p>
+
+      <section class="card" aria-label="Switch 示例">
+        <div class="row">
+          <div class="row-title">默认</div>
+          <label class="switch">
+            <input class="switch__input" type="checkbox" id="sw-default" />
+            <span class="switch__track" aria-hidden="true"></span>
+            <span class="switch__text">通知</span>
+          </label>
+          <div class="state" data-state-for="sw-default"></div>
+        </div>
+
+        <div class="row">
+          <div class="row-title">默认开启</div>
+          <label class="switch">
+            <input class="switch__input" type="checkbox" id="sw-on" checked />
+            <span class="switch__track" aria-hidden="true"></span>
+            <span class="switch__text">自动更新</span>
+          </label>
+          <div class="state" data-state-for="sw-on"></div>
+        </div>
+
+        <div class="row">
+          <div class="row-title">禁用</div>
+          <label class="switch">
+            <input class="switch__input" type="checkbox" id="sw-disabled" disabled checked />
+            <span class="switch__track" aria-hidden="true"></span>
+            <span class="switch__text">开发者模式</span>
+          </label>
+          <div class="state" data-state-for="sw-disabled"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
