@@ -4,96 +4,189 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+catalogs:
+  default:
+    '@commitlint/cli':
+      specifier: ^20.1.0
+      version: 20.1.0
+    '@commitlint/config-conventional':
+      specifier: ^20.0.0
+      version: 20.0.0
+    '@cspell/dict-lorem-ipsum':
+      specifier: ^4.0.5
+      version: 4.0.5
+    '@eslint/js':
+      specifier: ^9.37.0
+      version: 9.37.0
+    '@rollup/plugin-commonjs':
+      specifier: ^28.0.6
+      version: 28.0.6
+    '@rollup/plugin-node-resolve':
+      specifier: ^16.0.2
+      version: 16.0.2
+    '@rollup/plugin-terser':
+      specifier: ^0.4.4
+      version: 0.4.4
+    '@types/node':
+      specifier: ^24.7.0
+      version: 24.7.0
+    '@vitejs/plugin-vue':
+      specifier: ^6.0.1
+      version: 6.0.1
+    '@vitest/browser':
+      specifier: ^3.2.4
+      version: 3.2.4
+    commitizen:
+      specifier: ^4.3.1
+      version: 4.3.1
+    cspell:
+      specifier: ^9.2.1
+      version: 9.2.1
+    cz-git:
+      specifier: ^1.12.0
+      version: 1.12.0
+    eslint:
+      specifier: ^9.37.0
+      version: 9.37.0
+    eslint-config-prettier:
+      specifier: ^10.1.8
+      version: 10.1.8
+    eslint-plugin-prettier:
+      specifier: ^5.5.4
+      version: 5.5.4
+    eslint-plugin-vue:
+      specifier: ^10.5.0
+      version: 10.5.0
+    globals:
+      specifier: ^16.4.0
+      version: 16.4.0
+    husky:
+      specifier: ^9.1.7
+      version: 9.1.7
+    lint-staged:
+      specifier: ^16.2.3
+      version: 16.2.3
+    lit:
+      specifier: ^3.3.2
+      version: 3.3.2
+    prettier:
+      specifier: ^3.6.2
+      version: 3.6.2
+    rollup:
+      specifier: ^4.52.4
+      version: 4.52.4
+    rollup-plugin-postcss:
+      specifier: ^4.0.2
+      version: 4.0.2
+    rollup-plugin-typescript2:
+      specifier: ^0.36.0
+      version: 0.36.0
+    typescript:
+      specifier: ^5.9.3
+      version: 5.9.3
+    typescript-eslint:
+      specifier: ^8.46.0
+      version: 8.46.0
+    vitest:
+      specifier: ^3.2.4
+      version: 3.2.4
+    vitest-browser-vue:
+      specifier: ^1.1.0
+      version: 1.1.0
+    vue:
+      specifier: ^3.5.22
+      version: 3.5.22
+
 importers:
 
   .:
     devDependencies:
       '@commitlint/cli':
-        specifier: ^20.1.0
+        specifier: 'catalog:'
         version: 20.1.0(@types/node@24.7.0)(typescript@5.9.3)
       '@commitlint/config-conventional':
-        specifier: ^20.0.0
+        specifier: 'catalog:'
         version: 20.0.0
       '@cspell/dict-lorem-ipsum':
-        specifier: ^4.0.5
+        specifier: 'catalog:'
         version: 4.0.5
       '@eslint/js':
-        specifier: ^9.37.0
+        specifier: 'catalog:'
         version: 9.37.0
       '@rollup/plugin-commonjs':
-        specifier: ^28.0.6
+        specifier: 'catalog:'
         version: 28.0.6(rollup@4.52.4)
       '@rollup/plugin-node-resolve':
-        specifier: ^16.0.2
+        specifier: 'catalog:'
         version: 16.0.2(rollup@4.52.4)
       '@rollup/plugin-terser':
-        specifier: ^0.4.4
+        specifier: 'catalog:'
         version: 0.4.4(rollup@4.52.4)
       '@types/node':
-        specifier: ^24.7.0
+        specifier: 'catalog:'
         version: 24.7.0
       '@vitejs/plugin-vue':
-        specifier: ^6.0.1
+        specifier: 'catalog:'
         version: 6.0.1(vite@7.3.1(@types/node@24.7.0)(jiti@2.6.1)(terser@5.44.0)(yaml@2.8.1))(vue@3.5.22(typescript@5.9.3))
       '@vitest/browser':
-        specifier: ^3.2.4
+        specifier: 'catalog:'
         version: 3.2.4(vite@7.3.1(@types/node@24.7.0)(jiti@2.6.1)(terser@5.44.0)(yaml@2.8.1))(vitest@3.2.4)
       commitizen:
-        specifier: ^4.3.1
+        specifier: 'catalog:'
         version: 4.3.1(@types/node@24.7.0)(typescript@5.9.3)
       cspell:
-        specifier: ^9.2.1
+        specifier: 'catalog:'
         version: 9.2.1
       cz-git:
-        specifier: ^1.12.0
+        specifier: 'catalog:'
         version: 1.12.0
       eslint:
-        specifier: ^9.37.0
+        specifier: 'catalog:'
         version: 9.37.0(jiti@2.6.1)
       eslint-config-prettier:
-        specifier: ^10.1.8
+        specifier: 'catalog:'
         version: 10.1.8(eslint@9.37.0(jiti@2.6.1))
       eslint-plugin-prettier:
-        specifier: ^5.5.4
+        specifier: 'catalog:'
         version: 5.5.4(eslint-config-prettier@10.1.8(eslint@9.37.0(jiti@2.6.1)))(eslint@9.37.0(jiti@2.6.1))(prettier@3.6.2)
       eslint-plugin-vue:
-        specifier: ^10.5.0
+        specifier: 'catalog:'
         version: 10.5.0(@typescript-eslint/parser@8.46.0(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(vue-eslint-parser@10.2.0(eslint@9.37.0(jiti@2.6.1)))
       globals:
-        specifier: ^16.4.0
+        specifier: 'catalog:'
         version: 16.4.0
       husky:
-        specifier: ^9.1.7
+        specifier: 'catalog:'
         version: 9.1.7
       lint-staged:
-        specifier: ^16.2.3
+        specifier: 'catalog:'
         version: 16.2.3
       prettier:
-        specifier: ^3.6.2
+        specifier: 'catalog:'
         version: 3.6.2
       rollup:
-        specifier: ^4.52.4
+        specifier: 'catalog:'
         version: 4.52.4
       rollup-plugin-postcss:
-        specifier: ^4.0.2
+        specifier: 'catalog:'
         version: 4.0.2(postcss@8.5.6)
       rollup-plugin-typescript2:
-        specifier: ^0.36.0
+        specifier: 'catalog:'
         version: 0.36.0(rollup@4.52.4)(typescript@5.9.3)
       typescript:
-        specifier: ^5.9.3
+        specifier: 'catalog:'
         version: 5.9.3
       typescript-eslint:
-        specifier: ^8.46.0
+        specifier: 'catalog:'
         version: 8.46.0(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)
       vitest:
-        specifier: ^3.2.4
+        specifier: 'catalog:'
         version: 3.2.4(@types/node@24.7.0)(@vitest/browser@3.2.4)(jiti@2.6.1)(terser@5.44.0)(yaml@2.8.1)
       vitest-browser-vue:
-        specifier: ^1.1.0
+        specifier: 'catalog:'
         version: 1.1.0(@vitest/browser@3.2.4)(vitest@3.2.4)(vue@3.5.22(typescript@5.9.3))
       vue:
-        specifier: ^3.5.22
+        specifier: 'catalog:'
         version: 3.5.22(typescript@5.9.3)
 
   apps/my-component:
@@ -119,6 +212,12 @@ importers:
         version: 3.5.22(typescript@5.9.3)
 
   packages/utils: {}
+
+  packages/web-components:
+    dependencies:
+      lit:
+        specifier: 'catalog:'
+        version: 3.3.2
 
 packages:
 
@@ -664,6 +763,12 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
+
+  '@lit-labs/ssr-dom-shim@1.5.1':
+    resolution: {integrity: sha512-Aou5UdlSpr5whQe8AA/bZG0jMj96CoJIWbGfZ91qieWu5AWUMKw8VR/pAkQkJYvBNhmCcWnZlyyk5oze8JIqYA==}
+
+  '@lit/reactive-element@2.1.2':
+    resolution: {integrity: sha512-pbCDiVMnne1lYUIaYNN5wrwQXDtHaYtg7YEFPeW+hws6U47WeFvISGUWekPGKWOP1ygrs0ef0o1VJMk1exos5A==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -2024,8 +2129,14 @@ packages:
     resolution: {integrity: sha512-1wd/kpAdKRLwv7/3OKC8zZ5U8e/fajCfWMxacUvB79S5nLrYGPtUI/8chMQhn3LQjsRVErTb9i1ECAwW0ZIHnQ==}
     engines: {node: '>=20.0.0'}
 
+  lit-element@4.2.2:
+    resolution: {integrity: sha512-aFKhNToWxoyhkNDmWZwEva2SlQia+jfG0fjIWV//YeTaWrVnOxD89dPKfigCUspXFmjzOEUQpOkejH5Ly6sG0w==}
+
   lit-html@3.3.2:
     resolution: {integrity: sha512-Qy9hU88zcmaxBXcc10ZpdK7cOLXvXpRoBxERdtqV9QOrfpMZZ6pSYP91LhpPtap3sFMUiL7Tw2RImbe0Al2/kw==}
+
+  lit@3.3.2:
+    resolution: {integrity: sha512-NF9zbsP79l4ao2SNrH3NkfmFgN/hBYSQo90saIVI1o5GpjAdCPVstVzO1MrLOakHoEhYkrtRjPK6Ob521aoYWQ==}
 
   loader-utils@3.3.1:
     resolution: {integrity: sha512-FMJTLMXfCLMLfJxcX9PFqX5qD88Z5MRGaZCVzfuqeZSPsyiBzs+pahDQjbIWz2QIzPZz0NX9Zy4FX3lmK6YHIg==}
@@ -3607,6 +3718,12 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
+  '@lit-labs/ssr-dom-shim@1.5.1': {}
+
+  '@lit/reactive-element@2.1.2':
+    dependencies:
+      '@lit-labs/ssr-dom-shim': 1.5.1
+
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -5076,9 +5193,21 @@ snapshots:
       rfdc: 1.4.1
       wrap-ansi: 9.0.2
 
+  lit-element@4.2.2:
+    dependencies:
+      '@lit-labs/ssr-dom-shim': 1.5.1
+      '@lit/reactive-element': 2.1.2
+      lit-html: 3.3.2
+
   lit-html@3.3.2:
     dependencies:
       '@types/trusted-types': 2.0.7
+
+  lit@3.3.2:
+    dependencies:
+      '@lit/reactive-element': 2.1.2
+      lit-element: 4.2.2
+      lit-html: 3.3.2
 
   loader-utils@3.3.1: {}
 
